@@ -1,0 +1,59 @@
+/* Style */ 
+body {
+  background-color: lightblue;
+}
+
+h1,h2,h3,p,span,div {
+  margin: 10px;
+}
+
+/* Header */ 
+.square {
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+.div_header {
+ float: left;
+} 
+
+.yassify{
+  float: right;
+}
+
+/* Separator line */ 
+hr { 
+  background-color:gray; 
+  height: 1px; 
+  border: 0; 
+}
+
+/* Journal */ 
+.journal{
+  white-space: pre-line;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Lists */ 
+.list{
+  border: 1px solid gray;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Guesbook */ 
+.guestbook_submissions{
+  padding: 10px;
+  margin: 10px;
+}
+
+textarea, .submit{
+  display: inline-block;
+  vertical-align: bottom;
+}
+

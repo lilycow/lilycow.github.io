@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" type="text/css" href="Untitled-1.css"/>
+
+<!--Header-->
+<header>
+    <div class="h">
+        <div class="square"></div> 
+        <div class="div_header">
+            <h2> lily </h2>
+            <p> @nyc </p>
+            <p> caolily99@gmail.com </p>
+        </div>
+        <div> 
+            <button class="yassify" id="yassify" type="button"> yassify </button> 
+        </div>
+    </div>
+</header>
+
+<br style="clear:both" /> <!--Clear the float-->
+
+<hr> <!--Separator line-->
+
+<body>
+<!--Journal-->
+    <div class="journal">
+        10/10/23
+        - started building this 
+    </div>
+
+<hr> <!--Separator line-->
+
+<!--Lists-->
+    <div class="lists">
+        <section class="list">
+            <h3>recently watched</h3>
+            <ul>
+                <li>hereditary (8/10) </li>
+                <li>cabin in the woods (4/10) </li>
+            </ul>
+        </section>
+
+        <section class="list">
+            <h3>recently eaten</h3>
+            <ul>
+                <li>egg and cheese @ tompkins (6/10) </li>
+                <li>apple, bluberry donuts @ dough (9/10) </li>
+                <li>pistachio gelato @ eataly (9/10) </li>
+                <li>spicy tuna @ joe and the juice (7.5/10)</li>
+            </ul>
+        </section>
+    </div>
+
+<hr> <!--Separator line-->
+
+<!--Guestbook-->
+    <div class="guestbook_submissions">
+        add to the guestbook
+        <form> 
+            <textarea rows="2" cols="20" id="guestbook_input"></textarea>
+            <button class="submit" id="submit" type="button"> post </button> 
+            </div> 
+        </form> 
+        
+        <div name="guestbook" id="guestbook"></div>
+        
+        <script> 
+            function append_to_div(div_name, data){ 
+                document.getElementById(div_name).innerText += data; 
+            } 
+        
+            document.getElementById("submit") 
+                    .addEventListener('click', function() { 
+                var guestbook_input = document.getElementById("guestbook_input"); 
+                var value = guestbook_input.value.trim(); 
+        
+                if(!value){
+                    alert("Input field can't be empty!"); 
+                } else {
+                    append_to_div("guestbook", value+"\n"); 
+                }
+                guestbook_input.value = ""; 
+            }); 
+        </script> 
+    </div>
+
+<hr> <!--Separator line-->
+
+<!--Music-->
+    <div class="music">
+        <iframe style="border-radius:1px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EP6YuccBxUcC1?utm_source=generator" width="100%" height="150" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+  
+</body>
+</html>
+
